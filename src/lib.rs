@@ -94,7 +94,9 @@ impl log::Log for Log {
             Level::Trace => "trace",
         };
 
-        println!("{pfx}: {}", record.args());
+        format!("{}", record.args())
+            .lines()
+            .for_each(|l| println!("{pfx}: {l}"));
     }
 
     fn flush(&self) { }
