@@ -23,7 +23,7 @@ but sometimes, that's all you really need.
 
 ### Basic logging
 
-```rs
+```rust
 use smlog::{log::{info, error}, Log, LevelFilter};
 
 fn main() {

@@ -20,7 +20,7 @@ static LOG_IGNORE: Mutex<Vec<String>> = Mutex::new(Vec::new());
 /// * `target` the module to add to module filter
 ///    Includes all submodules of `target`
 ///
-/// ```rs
+/// ```rust
 /// use smlog::{Log, LevelFilter, ignore};
 ///
 /// fn main() {
@@ -44,7 +44,7 @@ pub fn ignore(target: impl AsRef<str>) {
 ///
 /// # Example
 ///
-/// ```rs
+/// ```rust
 /// use smlog::{Log, LevelFilter, ignore, allow};
 /// 
 /// fn main() {
