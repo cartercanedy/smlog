@@ -25,7 +25,6 @@ but sometimes, that's all you really need.
 
 ```rs
 use smlog::{log::{info, error}, Log, LevelFilter};
-use log::{info, error};
 
 fn main() {
     Log::init(LevelFilter::Info);
